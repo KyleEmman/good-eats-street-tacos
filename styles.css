@@ -1,0 +1,525 @@
+@import url('https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400');
+html, body {
+    min-height: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgba(122, 191, 191, .5);
+}
+* {
+    transition: all .5s ease-out;
+}
+h1, h2, h3, nav a, .functional-icons span, footer, nav li {
+    font-family: 'Bebas Neue', cursive;
+}
+p, li, nav, input {
+    font-family: 'Montserrat', sans-serif;
+}
+h3 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 35px;
+}
+.container {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    height: fit-content;
+    max-width: 1280px;
+}
+.street-tacos-png {
+    height: 200px;
+}
+.header h2 {
+    text-align: center;
+}
+h2 {
+    margin: 0;
+}
+.checked {
+    color: #EB5428;
+}
+.nav-icons {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-icons {
+    list-style: none;
+}
+header {
+    padding-top: 165px;
+    text-align: center;
+    padding-bottom: 10px;   
+}
+nav {
+    position: fixed;
+    top: 0;
+    min-width: 1280px;
+    border-bottom: 1px black;
+    box-shadow: 0px 4px 5px -3px #888;
+    background-color: white;
+    z-index: 2;
+}
+nav a, nav a img {
+    width: 50px;
+    height: 50px;
+}
+nav ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 100px 100px 100px 100px 100px 100px 100px 1fr;
+}
+nav ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+}
+nav ul li:first-child {
+    display: block;
+    position: static;
+}
+nav ul li p {
+    position: relative;
+    bottom: 10px;
+    color: #EB5428;
+}
+.sign-in {
+    bottom: 10px;
+    left: 98px;
+    font-size: 12px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+nav ul li:first-of-type img {
+    height: 100%;
+    width: 100px;
+}
+nav ul li:last-of-type img {
+    width: 35px;
+    height: 35px;
+    float: right;
+    transform: translate(-8px, 30px);
+} 
+#label-dropdown, #input-dropdown {
+    display: none;
+}
+nav ul li:last-of-type a {
+    position: relative;
+    bottom: 20px;
+    left: 100px;
+}
+.search {
+    z-index: 1;
+    position: absolute;
+    top: 120px;
+    left: 43%;
+}
+#search-input {
+    border-color: #EB5428;
+    padding: 5px;
+}
+.icon-tabler-search {
+    transform: translate(-5px, 10px);
+    background-color: #EB5428;
+    height: 25px;
+    padding: 2px;
+}
+.tacos-container {
+    height: 400px;
+    width: 100%;
+    display: flex;
+}
+.taco-picture {
+    width: 300px;
+}
+.functional-icons {
+    border: 1px solid #EB5428;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.functional-icons div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.street-tacos-png {
+    height: 100%;
+}
+.street-tacos-description {
+    margin-left: 10px;
+    line-height: 30px;
+}
+.details-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    color: #7ABFBF;
+    background-color: #0D0D0D;
+}
+.details-container h2 {
+    width: 100%;
+}
+.details-container div:first-of-type {
+    margin-left: 40px;
+}
+.details-container div:last-of-type {
+    margin-right: 40px;
+}
+.ingredients-directions-container {
+    display: flex;
+}
+.ingredients ul {
+    margin: 0;
+    padding-left: 20px;
+}
+.directions h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+.ingredients h3 {
+    margin-bottom: 5px;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+.directions {
+    margin-left: 15px;
+}
+.ingredients {
+    line-height: 25px;
+}
+.directions li {
+    margin-top: 40px;
+}
+.directions li:first-of-type {
+    margin: 0;
+}
+.side-dishes-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+.side-dishes-container h3 {
+    padding-top: 10px;
+    text-align: center;
+}
+.side-dishes-container {
+    background-color: #7ABFBF;
+}
+.side-dishes-flex div {
+    margin-bottom: 15px;
+}
+footer {
+    display: flex;
+    padding: 30px 0;
+}
+.footer-icons-div {
+    flex-grow: 2;
+    order: 2;
+}
+.copyright {
+    display: flex;
+    flex-grow: 1;
+    order: 1;
+}
+.copyright img {
+    order: 1;
+    height: 200px;
+}
+.copyright h4:first-of-type {
+    order: 2;
+}
+.copyright h4:last-of-type{
+    order: 3;
+}
+.footer-icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-icons p {
+    position: relative;
+    color: #EB5428;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    right: 2px;
+    
+}
+#p4 {
+    transform: translateX(5px);
+}
+#p2 {
+    transform: translateX(-5px);
+}
+.details-container b::after {
+    content: "\a";
+    white-space: pre;
+}
+.nav-icons li:hover {
+    background-color: #EB5428;
+}
+.functional-icons a {
+    color: #EB5428;
+    text-decoration: none;
+    cursor: pointer;
+}
+.functional-icons a:hover {
+    background-color: #EB5428;
+}
+.footer-icons li:hover {
+    background-color: #e2967e;
+    cursor: pointer;
+}
+.food-description-flex:hover {
+    background-color: #EB5428;
+}
+
+@media only screen and (max-width: 1068px) {
+    .container {
+        max-width: 768px;
+    }
+    nav {
+        min-width: 768px;
+    }
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(7, 109px);
+        grid-template-areas: "left left left left right right right";
+        grid-auto-rows: auto;
+    }
+    .nav1 {
+        grid-area: left;
+    }
+    .nav-last {
+        grid-area: right;
+        transform: translateX(30px);
+    }
+    .search {
+        position: absolute;
+        z-index: 19;
+        top: 20px;
+        left: 450px;
+    }
+    .tacos-container {
+        height: fit-content;
+        flex-direction: column;
+    }
+    .street-tacos-png {
+        width: 100%;
+    }
+    .functional-icons {
+        width: 100%;
+        height: 80px;
+        position: absolute;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: rgba(255,255,255,.75);
+    }
+    .functional-icons span {
+        width: 100%;
+    }
+    header {
+        padding-top: 205px;
+    }
+    header h2 {
+        text-align: left;
+        margin-left: 10px;
+    }
+    .details-container {
+        flex-direction: column;
+        align-items: center;
+        color: revert;
+        background-color: revert;
+        margin-bottom: 10px;
+    }
+    .details-container div:first-of-type, .details-container div:last-of-type {
+        margin: 0;
+    }
+    .details-container div {
+        height: 20px;
+    }
+    .side-dishes-flex {
+        flex-wrap: wrap;
+    }
+    .side-dishes-flex img {
+        height: 100px;
+    }
+    .side-dishes-flex > div {
+        display: flex;
+        width: 50%;
+    }
+    .food-description-flex * {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+        margin-left: 5px;
+    }
+    .copyright {
+        flex-direction: column;
+        align-items: center;
+    }
+    .functional-icons div span {
+        transform: translateX(5px);
+    }
+    .details-container b::after {
+        content: "";
+        white-space: 0;
+    }
+}
+@media only screen and (max-width: 714px) {
+    .container {
+        max-width: 414px;
+    }
+    nav {
+        min-width: 414px;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-icons img {
+        display: none;
+    }
+    .nav1 img, .nav-last img {
+        display: revert;
+    }
+    .nav-last {
+        position: absolute;
+        top: 0;
+        right: 150px;
+    }
+    .nav-last p::after {
+        content: '/up';
+    }
+    #nav1 {
+        position: absolute;
+        top: 0;
+        left: 110px;
+        width: fit-content;
+    }
+    #nav1 img {
+        width: 200px;
+        height: 80px;
+    }
+    .nav-icons {
+        margin-top: 100px;
+    }
+    .nav-icons li:not(.nav-last) {
+        text-align: center;
+        display: block;
+    }
+
+    #input-dropdown ~ ul {
+        overflow: hidden;
+        max-height: 0px;
+    }
+    #input-dropdown:checked ~ ul {
+        max-height: 500px;
+    }
+    #input-dropdown:checked {
+
+    }
+    #label-dropdown, #input-dropdown {
+        display: revert;
+        position: absolute;
+        top: 10px;
+        left: 35px;
+    }
+    #label-dropdown::after {
+        content: 'menu';
+        position: relative;
+        right: 47px;
+        top: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    #input-dropdown {
+        opacity: 0;
+        position: relative;
+        top: 23px;
+        left: 45px;
+        transform: scale(3);
+        cursor: pointer;
+    }
+    .search {
+        z-index: 0;
+        position: absolute;
+        top: 130px;
+        left: 100px;
+    }
+    header h2 {
+        text-align: center;
+    }
+    .functional-icons {
+        position: revert;
+    }
+    .details-container {
+        align-items: flex-start;
+    }
+    .details-container div {
+        margin: 0;
+        padding: 0;
+        padding-left: 10px;
+    }
+    .ingredients-directions-container {
+        flex-direction: column;
+    }
+    .directions ol {
+        margin-right: 20px;
+    }
+    .ingredients h3 {
+        text-align: center;
+    }
+    .side-dishes-flex {
+        flex-direction: column;
+    }
+    .side-dishes-flex div {
+        width: 100%;
+    }
+    footer {
+        flex-direction: column;
+    }
+    .footer-icons-div {
+        order: 1;
+    }
+    .copyright {
+        order: 2;
+    }
+    .functional-icons div span {
+        transform: translateX(5px);
+    } 
+    .details-container b::after {
+        content: "";
+        white-space: 0;
+    }
+    .footer-icons {
+        padding: 0;
+    }
+    #nav-last:hover {
+        background: rgba(51, 170, 51, 0)
+    }
+}
+@media print {
+    * {
+        overflow: hidden;
+        margin: 0.5ch;
+        font-family: sans-serif;
+    }
+    img {
+        visibility: hidden;
+    }
+    nav {
+        display: none;
+    }
+}
